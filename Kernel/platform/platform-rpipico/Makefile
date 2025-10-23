@@ -50,6 +50,7 @@ image:: world
 	${PICOTOOL} uf2 convert filesystem.ftl -t bin filesystem.uf2 -o 0x10018000 ${PICOTOOLFLAGS}
 
 diskimage:
+	$(MAKE) image
 
 clean:
 	rm -rf build
